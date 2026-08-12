@@ -40,6 +40,18 @@
             </div>
 
             <div class="form-group">
+                <label for="category_id">カテゴリ</label>
+                <select id="category_id" name="category_id" required>
+                    @foreach ($categories as $category)
+                        <option value="{{ $category->id }}" @selected(old('category_id', $post->category_id) == $category->id)>{{ $category->name }}</option>
+                    @endforeach
+                </select>
+                @error('category_id')
+                    <p class="error">{{ $message }}</p>
+                @enderror
+            </div>
+
+            <div class="form-group">
                 <label for="content">本文</label>
                 <textarea id="content" name="content" required>{{ old('content', $post->content) }}</textarea>
                 @error('content')

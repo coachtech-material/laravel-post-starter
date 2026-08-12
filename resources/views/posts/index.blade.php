@@ -44,7 +44,7 @@
             @foreach ($posts as $post)
                 <div class="post-card">
                     <h2>{{ $post->title }}</h2>
-                    <p class="meta">投稿者: {{ $post->user->name }}</p>
+                    <p class="meta">投稿者: {{ $post->user->name }}／カテゴリ: {{ $post->category->name }}</p>
                     <p class="content">{{ $post->content }}</p>
                     <div class="actions">
                         @can('update', $post)
