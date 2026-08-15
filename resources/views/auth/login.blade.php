@@ -6,24 +6,24 @@
     <title>ログイン / Tsubu</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #f7f9f9; color: #0f1419; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 1rem; }
-        .card { background: #ffffff; border: 1px solid #eff3f4; padding: 2.2rem 2rem; border-radius: 16px; width: 100%; max-width: 420px; }
-        .brand { display: flex; align-items: center; justify-content: center; gap: 0.5rem; font-weight: 800; font-size: 1.4rem; margin-bottom: 0.4rem; }
-        .brand .mark { width: 34px; height: 34px; border-radius: 50%; background: #059669; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; font-weight: 800; }
-        h1 { font-size: 1.05rem; text-align: center; color: #536471; font-weight: 500; margin-bottom: 1.4rem; }
-        .test-accounts { background: #f0fdf4; border: 1px solid #bbf7d0; padding: 0.9rem 1rem; border-radius: 10px; margin-bottom: 1.4rem; font-size: 0.85rem; }
-        .test-accounts h3 { color: #047857; margin-bottom: 0.4rem; font-size: 0.82rem; }
-        .test-accounts p { color: #065f46; margin: 0.2rem 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #FBFAF7; color: #17181C; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 1.2rem; font-feature-settings: "palt"; }
+        .card { background: #FFFFFF; border: 1px solid #EDEBE4; padding: 2.4rem 2.2rem 2.2rem; border-radius: 22px; width: 100%; max-width: 400px; box-shadow: 0 18px 50px -24px rgba(60, 45, 20, 0.25); }
+        .brand { display: flex; align-items: center; justify-content: center; gap: 0.55rem; font-weight: 800; font-size: 1.5rem; letter-spacing: -0.02em; margin-bottom: 0.35rem; }
+        .brand .mark { width: 38px; height: 38px; border-radius: 38%; background: linear-gradient(135deg, #FFB03A, #FF7A59); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; font-weight: 800; }
+        h1 { font-size: 0.92rem; text-align: center; color: #6E7076; font-weight: 500; margin-bottom: 1.6rem; }
+        .test-accounts { background: #FBFAF7; border: 1.5px dashed #D9D6CE; padding: 0.85rem 1rem; border-radius: 12px; margin-bottom: 1.5rem; font-size: 0.82rem; }
+        .test-accounts h3 { color: #6E7076; margin-bottom: 0.35rem; font-size: 0.74rem; letter-spacing: 0.06em; }
+        .test-accounts p { color: #3A3C42; margin: 0.15rem 0; font-variant-numeric: tabular-nums; }
         .form-group { margin-bottom: 1rem; }
-        label { display: block; color: #536471; margin-bottom: 0.4rem; font-size: 0.82rem; font-weight: 700; }
-        input[type="email"], input[type="password"] { width: 100%; padding: 0.75rem 0.85rem; border: 1px solid #cfd9de; border-radius: 10px; font-size: 0.95rem; }
-        input:focus { outline: none; border-color: #059669; box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.12); }
-        button { width: 100%; padding: 0.8rem; background: #059669; color: white; border: none; border-radius: 999px; font-size: 0.95rem; font-weight: 700; cursor: pointer; margin-top: 0.6rem; }
-        button:hover { background: #047857; }
-        .error { color: #dc2626; font-size: 0.85rem; margin-top: 0.3rem; }
-        .links { text-align: center; margin-top: 1.2rem; font-size: 0.9rem; }
-        .links a { color: #059669; text-decoration: none; font-weight: 700; }
-        .links a:hover { text-decoration: underline; }
+        label { display: block; color: #3A3C42; margin-bottom: 0.4rem; font-size: 0.8rem; font-weight: 600; }
+        input[type="email"], input[type="password"] { width: 100%; padding: 0.75rem 0.9rem; border: 1.5px solid #E3E1D9; border-radius: 12px; font-size: 0.95rem; background: #FFFFFF; color: #17181C; font-family: inherit; }
+        input:focus { outline: none; border-color: #17181C; }
+        button { width: 100%; padding: 0.85rem; background: #17181C; color: #fff; border: none; border-radius: 12px; font-size: 0.95rem; font-weight: 700; cursor: pointer; margin-top: 0.7rem; font-family: inherit; }
+        button:hover { background: #33353C; }
+        button:focus-visible { outline: 2px solid #FF7A59; outline-offset: 2px; }
+        .error { color: #C2402A; font-size: 0.83rem; margin-top: 0.3rem; }
+        .links { text-align: center; margin-top: 1.3rem; font-size: 0.88rem; color: #6E7076; }
+        .links a { color: #17181C; text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
     </style>
 </head>
 <body>
@@ -59,7 +59,7 @@
         </form>
 
         <div class="links">
-            <a href="{{ route('register') }}">アカウントを作成</a>
+            はじめてですか？ <a href="{{ route('register') }}">アカウントを作成</a>
         </div>
     </div>
 </body>

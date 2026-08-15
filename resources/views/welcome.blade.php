@@ -6,32 +6,31 @@
     <title>Tsubu</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #f7f9f9; color: #0f1419; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 1rem; }
-        .card { background: #ffffff; border: 1px solid #eff3f4; padding: 2.6rem 2.2rem; border-radius: 16px; width: 100%; max-width: 420px; text-align: center; }
-        .brand { display: flex; align-items: center; justify-content: center; gap: 0.55rem; font-weight: 800; font-size: 1.7rem; margin-bottom: 0.5rem; }
-        .brand .mark { width: 40px; height: 40px; border-radius: 50%; background: #059669; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: 800; }
-        .tagline { color: #536471; margin-bottom: 1.8rem; }
-        .user-info { background: #f0fdf4; border: 1px solid #bbf7d0; padding: 0.9rem 1rem; border-radius: 10px; margin-bottom: 1.4rem; font-size: 0.9rem; }
-        .user-info p { color: #065f46; }
-        .links { display: flex; flex-direction: column; gap: 0.75rem; }
-        .links a { display: block; padding: 0.8rem 1.5rem; border-radius: 999px; text-decoration: none; font-size: 0.95rem; font-weight: 700; }
-        .btn-primary { background: #059669; color: white; }
-        .btn-primary:hover { background: #047857; }
-        .btn-secondary { background: #ffffff; color: #0f1419; border: 1px solid #cfd9de; }
-        .btn-secondary:hover { background: #f7f9f9; }
-        .btn-danger { background: #ffffff; color: #dc2626; border: 1px solid #fecaca; padding: 0.8rem 1.5rem; border-radius: 999px; font-size: 0.95rem; font-weight: 700; cursor: pointer; width: 100%; }
-        .btn-danger:hover { background: #fef2f2; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #FBFAF7; color: #17181C; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 1.2rem; font-feature-settings: "palt"; }
+        .card { width: 100%; max-width: 400px; text-align: center; }
+        .mark { width: 76px; height: 76px; border-radius: 38%; background: linear-gradient(135deg, #FFB03A, #FF7A59); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 2.3rem; font-weight: 800; margin: 0 auto 1.1rem; box-shadow: 0 18px 40px -18px rgba(232, 121, 43, 0.55); }
+        .wordmark { font-weight: 800; font-size: 2rem; letter-spacing: -0.02em; margin-bottom: 0.3rem; }
+        .tagline { color: #6E7076; margin-bottom: 2.2rem; }
+        .user-info { background: #FFFFFF; border: 1px solid #EDEBE4; padding: 0.9rem 1rem; border-radius: 12px; margin-bottom: 1.3rem; font-size: 0.9rem; color: #3A3C42; }
+        .links { display: flex; flex-direction: column; gap: 0.7rem; }
+        .links a { display: block; padding: 0.85rem 1.5rem; border-radius: 12px; text-decoration: none; font-size: 0.95rem; font-weight: 700; }
+        .btn-primary { background: #17181C; color: #fff; }
+        .btn-primary:hover { background: #33353C; }
+        .btn-secondary { background: transparent; color: #17181C; border: 1.5px solid #D9D6CE; }
+        .btn-secondary:hover { border-color: #17181C; }
+        .btn-danger { background: transparent; color: #C2402A; border: 1.5px solid #EBD5CE; padding: 0.85rem 1.5rem; border-radius: 12px; font-size: 0.95rem; font-weight: 700; cursor: pointer; width: 100%; font-family: inherit; }
+        .btn-danger:hover { border-color: #C2402A; }
+        .links a:focus-visible, .btn-danger:focus-visible { outline: 2px solid #FF7A59; outline-offset: 2px; }
     </style>
 </head>
 <body>
     <div class="card">
-        <div class="brand"><span class="mark">つ</span>Tsubu</div>
+        <div class="mark">つ</div>
+        <div class="wordmark">Tsubu</div>
         <p class="tagline">いま思ったことを、ひとこと。</p>
 
         @auth
-            <div class="user-info">
-                <p><strong>ログイン中:</strong> {{ auth()->user()->name }}</p>
-            </div>
+            <div class="user-info"><strong>ログイン中:</strong> {{ auth()->user()->name }}</div>
             <div class="links">
                 <a href="{{ route('posts.index') }}" class="btn-primary">タイムラインへ</a>
                 <form action="{{ route('logout') }}" method="POST">
@@ -42,7 +41,7 @@
         @else
             <div class="links">
                 <a href="{{ route('login') }}" class="btn-primary">ログイン</a>
-                <a href="{{ route('register') }}" class="btn-secondary">新規登録</a>
+                <a href="{{ route('register') }}" class="btn-secondary">アカウントを作成</a>
             </div>
         @endauth
     </div>
