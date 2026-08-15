@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポストを編集 / Tsubu</title>
+    <title>ポストを編集 / つぶやき投稿アプリ</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #FBFAF7; color: #17181C; font-feature-settings: "palt"; }
@@ -33,7 +33,7 @@
 <body>
     <div class="shell">
         <header class="topbar">
-            <a href="{{ route('posts.index') }}" class="brand"><span class="mark">つ</span>Tsubu</a>
+            <a href="{{ route('posts.index') }}" class="brand"><span class="mark">つ</span>つぶやき投稿アプリ</a>
         </header>
 
         <main class="panel">
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="actions">
-                    <button type="submit" class="btn btn-primary">更新する</button>
+                    <button type="submit" class="btn btn-primary">更新</button>
                     <a href="{{ route('posts.index') }}" class="btn btn-secondary">キャンセル</a>
                 </div>
             </form>

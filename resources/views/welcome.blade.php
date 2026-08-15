@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tsubu</title>
+    <title>つぶやき投稿アプリ</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #FBFAF7; color: #17181C; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 1.2rem; font-feature-settings: "palt"; }
@@ -26,7 +26,7 @@
 <body>
     <div class="card">
         <div class="mark">つ</div>
-        <div class="wordmark">Tsubu</div>
+        <div class="wordmark">つぶやき投稿アプリ</div>
         <p class="tagline">いま思ったことを、ひとこと。</p>
 
         @auth

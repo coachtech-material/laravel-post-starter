@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>アカウント作成 / Tsubu</title>
+    <title>アカウント作成 / つぶやき投稿アプリ</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #FBFAF7; color: #17181C; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 1.2rem; font-feature-settings: "palt"; }
@@ -25,7 +25,7 @@
 </head>
 <body>
     <div class="card">
-        <div class="brand"><span class="mark">つ</span>Tsubu</div>
+        <div class="brand"><span class="mark">つ</span>つぶやき投稿アプリ</div>
         <h1>アカウントを作成する</h1>
 
         <form method="POST" action="{{ route('register') }}">
