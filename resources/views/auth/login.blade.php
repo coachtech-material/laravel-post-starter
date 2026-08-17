@@ -6,8 +6,8 @@
     <title>ログイン / つぶやき投稿アプリ</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #FFFFFF; color: #0F1419; min-height: 100dvh; display: flex; justify-content: center; align-items: center; padding: 1.2rem; font-feature-settings: "palt"; }
-        .card { width: 100%; max-width: 384px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #F4F5F6; color: #0F1419; min-height: 100dvh; display: flex; justify-content: center; align-items: center; padding: 1.2rem; font-feature-settings: "palt"; }
+        .card { width: 100%; max-width: 400px; background: #FFFFFF; border: 1px solid #EFF1F4; border-radius: 20px; padding: 2.3rem 2.1rem 2.1rem; box-shadow: 0 18px 44px -24px rgba(15, 20, 25, 0.22); }
         .brand { display: flex; align-items: center; justify-content: center; gap: 0.55rem; font-weight: 800; font-size: 1.4rem; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
         .brand .mark { width: 40px; height: 40px; border-radius: 38%; background: linear-gradient(135deg, #FFB03A, #FF7A59); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: 800; }
         h1 { font-size: 0.92rem; text-align: center; color: #5B6570; font-weight: 500; margin-bottom: 1.7rem; }
